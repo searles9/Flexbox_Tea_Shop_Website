@@ -4,66 +4,102 @@ body {
 	color: seashell;
 	background-color: black;
 	opacity: 0.9;
+    text-align: center;
+    box-sizing: border-box;
     /* reset browser default */
     margin: 0;
     padding: 0;
-
-    box-sizing: border-box;
-}
-
-a {
-    color: seashell;
 }
 
 /* header */
 header {
-    height: 69px;
+    background-color: black;
+    display: flex; 
+    position: fixed; 
     width: 100%;
-    border-bottom: 1px solid seashell;
-    z-index: 2;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#logo-container {
-    display: flex;
+    /* for up-down alignment */
     align-items: center;
+    /* for left-right alignment */
+    justify-content: space-between;
 }
 
 #logo {
-    margin-left: 10px;
     height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+nav li {
+    list-style: none;
     margin-right: 10px;
-}
-
-nav ul li {
+    padding: 0px 15px;
     display: inline-block;
     text-decoration: underline;
-    padding: 0px 8px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: seashell;
 }
 
 /* mission */
 .mission {
+    margin: 0 auto;
+    display: flex;
     background-image: url("../images/img-mission-background.jpg");
-    height: 700px;
-    width: 90%;
-    margin-top: 69px;
-    display: flex;
-    margin: 0 5% 0 5%;
-    display: flex;
-    align-items: center;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
     justify-content: center;
-    text-align: center;
-    background-size: cover;
 }
 
 .mission-text {
+    margin: auto;
     background-color: black;
     width: 100%;
+    /* padding: 0px 20px; */
+}
+
+/* tea of the month */
+.tea-of-the-month {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.tea-of-the-month-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tea-of-the-month-box {
+    margin: 0 15px;
+}
+
+.tea-of-the-month-box img {
+    height: 200px;
+    width: 300px;
+}
+
+/*  store locations */
+.store-locations {
+    width: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+/* contact info */
+.contact-info {
+    min-height: 200px;
+}
+
+/* footer */
+footer {
+    text-align: left;
+    margin-left: 20px;
 }
